@@ -26,7 +26,6 @@
 
 <script>
 import Calculator from './calculator'
-import { TestInput } from './test-data'
 
 import JsonRow from './json-row'
 
@@ -54,7 +53,7 @@ export default {
         throw e
       }
 
-      this.calculated = new Calculator(JSON.stringify(TestInput)).calculate()
+      this.calculated = new Calculator(json).calculate()
     }
   }
 }
